@@ -3,9 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 // Assuming you still want to use these placeholder images, or replace them with actual project images.
-import corpcommentImg from "@/public/corpcomment.png"; 
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import attrybImg from "@/public/attryb.png"; 
+import autoPitchImg from "@/public/autopitch.png";
+import curaImg from "@/public/cura.png";
 
 export const links = [
   {
@@ -75,21 +75,21 @@ export const projectsData = [
     description:
       "Developed an AI-powered D2C personalization platform in Next.js. Built visitor profiling and no-code tools for custom user journeys.",
     tags: ["Next.js", "AI Integration", "Full-Stack Development", "Tailwind CSS"],
-    imageUrl: corpcommentImg, // Placeholder, replace with actual project image
+    imageUrl: attrybImg, // Placeholder, replace with actual project image
   },
   {
     title: "AutoPitch.ai",
     description:
       "Built a SaaS that creates personalized tech sales pitches by analyzing data from 6+ sources. Implemented AI-based pitch generation to help sales teams close deals faster.",
     tags: ["Next.js", "OpenAI API", "MERN Stack", "SaaS"],
-    imageUrl: rmtdevImg, // Placeholder, replace with actual project image
+    imageUrl: autoPitchImg, // Placeholder, replace with actual project image
   },
   {
     title: "Cura AI",
     description:
       "Developed an AI tool that recommends medicines based on symptoms. Designed mobile-responsive UI with a strong focus on accessibility.",
     tags: ["Next.js", "AI Integration", "React.js", "Tailwind CSS"],
-    imageUrl: wordanalyticsImg, // Placeholder, replace with actual project image
+    imageUrl: curaImg, // Placeholder, replace with actual project image
   },
 ] as const;
 

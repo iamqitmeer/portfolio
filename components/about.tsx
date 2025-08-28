@@ -19,35 +19,46 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I love building fast, easy-to-use, and scalable websites, SaaS
+        I enjoy building fast, user-friendly, and scalable websites, SaaS
         platforms, and CRM tools. With{" "}
-        <span className="font-medium">2.5 years of experience</span>, my journey
-        started with a simple question: “How does the internet work?” That
-        curiosity led me to learn{" "}
+        <span className="font-medium">2.5 years of experience</span>, I have
+        worked with{" "}
         <span className="font-medium">
           JavaScript, TypeScript, and the MERN stack
-        </span>
-        . At first, I focused on creating reusable UI components. Over time, I
-        started building complete full-stack systems and added AI to make apps
-        smarter and more useful. I’ve also created three helpful
-        <span className="font-medium"> NPM packages</span> to solve common
-        problems developers face. I enjoy turning complex problems into simple,
-        clean solutions, always keeping the user experience in mind.
+        </span>{" "}
+        to create both front-end and full-stack applications. I also developed
+        three helpful <span className="font-medium">NPM packages</span> to solve
+        common developer challenges. My focus is on turning complex problems
+        into simple, clean solutions with a great user experience.
       </p>
 
       <p>
-        My core stack for development includes{" "}
+        My main stack includes{" "}
         <span className="font-medium">
           React.js, Next.js, React Native, Node.js, Express.js, and MongoDB
         </span>
-        . I am also highly proficient in{" "}
-        <span className="font-medium">TypeScript and Tailwind CSS</span>. I'm
-        always eager to expand my knowledge and am currently diving deeper into{" "}
-        <span className="font-medium">AI, ML, and Data Science</span> to
-        integrate even smarter solutions into applications. I'm actively sharing
-        my insights on platforms like{" "}
-        <a className="underline" href="https://www.linkedin.com/in/iamqitmeer/">LinkedIn</a> and{" "}
-        <a className="underline" href="https://www.x.com/iamqitmeer/">X</a>.
+        . I am also skilled in{" "}
+        <span className="font-medium">TypeScript and Tailwind CSS</span>. I am
+        always learning and currently exploring{" "}
+        <span className="font-medium">AI, ML, and Data Science</span> to build
+        even smarter applications. I regularly share my learnings and insights
+        on{" "}
+        <a
+          className="underline"
+          href="https://www.linkedin.com/in/iamqitmeer/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>{" "}
+        and{" "}
+        <a
+          className="underline"
+          href="https://www.x.com/iamqitmeer/"
+          target="_blank"
+        >
+          X
+        </a>
+        .
       </p>
     </motion.section>
   );
