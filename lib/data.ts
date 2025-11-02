@@ -2,10 +2,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// Assuming you still want to use these placeholder images, or replace them with actual project images.
-import attrybImg from "@/public/attryb.png"; 
+
+// Import project images - Make sure you have these in your /public folder
+import curaImg from "@/public/cura.png"; // **ADD THIS IMAGE TO YOUR /public FOLDER**
+import attrybImg from "@/public/attryb.png";
 import autoPitchImg from "@/public/autopitch.png";
-import curaImg from "@/public/cura.png";
+
 
 export const links = [
   {
@@ -36,37 +38,54 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Open-Source Creator & Developer",
-    location: "Remote",
+    title: "Frontend Developer",
+    location: "Appollon Digitals, Karachi",
     description:
-      "Built and published three NPM packages: log-vwer, country-x, and safe-env, solving developer issues with logging, environment management, and country data access. Designed log-vwer as a plug-and-play dashboard for real-time log viewing and filtering in Node.js apps with MongoDB support.",
-    icon: React.createElement(FaReact), // Using FaReact as a generic development icon
-    date: "May 2025 – Present",
-  },
-  {
-    title: "Frontend Developer (React, Next.js, React Native)",
-    location: "Karachi, Pakistan",
-    description:
-      "Built intuitive and responsive SaaS/CRM UIs using React, Next.js, and Tailwind CSS. Integrated AI-driven personalization features to increase conversion and retention. Worked in cross-functional teams to deliver production-ready solutions.",
+      "Designing and developing FOREX web applications with a focus on intuitive and responsive user interfaces. Collaborating with cross-functional teams to deliver high-quality, production-ready solutions.",
     icon: React.createElement(CgWorkAlt),
     date: "Apr 2025 – Present",
   },
   {
-    title: "Full Stack Developer",
-    location: "Karachi, Pakistan",
+    title: "Back End Developer (Part-Time/Freelance)",
+    location: "AFA Innovations, Remote",
     description:
-      "Built and maintained MERN/Next.js full-stack apps with high performance and scalability. Led branding and social media strategy to increase company visibility. Delivered clean code and seamless UI/UX across client projects.",
+      "Overseeing backend development (Nest.js) and system architecture for a Fitness AI Application. Also contributing to UI/UX direction to ensure the product is scalable, reliable, and aligns with business goals.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Mar 2025 – Present",
+  },
+  {
+    title: "Creator - Open Source",
+    location: "Remote",
+    description:
+      "Built and published Log Vwer, a simple and powerful logging tool for Node.js developers. It provides a clean web dashboard for live log viewing, filtering, and storage.",
+    icon: React.createElement(FaReact),
+    date: "May 2025 – Present",
+  },
+  {
+    title: "Full Stack Developer",
+    location: "Zenth Solutions, Karachi",
+    description:
+      "Developed and maintained production-level MERN/Next.js full-stack applications with a focus on high performance and scalability. Led branding and social media strategy to increase the company’s online presence.",
     icon: React.createElement(FaReact),
     date: "Jul 2024 – Apr 2025",
   },
   {
-    title: "Frontend Web Developer (React/Next.js) - Internship",
-    location: "Remote",
+    title: "Full Stack Developer (Node.js, Next.js, Supabase)",
+    location: "POX Solutions, Remote",
     description:
-      "Completed a frontend internship, learning web development and working on full-stack projects. Developed website features including login, signup, two-step authentication, chat, form handling, blog, and admin panel. Contributed to two full-stack projects: an invoice app and a video downloader.",
-    icon: React.createElement(LuGraduationCap),
-    date: "Aug 2024 – Nov 2024",
+      "Worked on features like login, two-step authentication, chat, and admin panels. Contributed to two full-stack projects: a finance app and a video downloader.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Oct 2023 – Jul 2024",
   },
+  {
+    title: "Internship Trainee",
+    location: "Dawat-e-Islami, Karachi",
+    description:
+      "Contributed by building reusable frontend components using HTML, CSS, JavaScript, and basic React. This role helped improve my frontend coding practices and understanding of team workflows.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Mar 2023 – Oct 2023",
+  },
+  
 ] as const;
 
 export const projectsData = [
@@ -93,25 +112,26 @@ export const projectsData = [
   },
 ] as const;
 
+
 export const skillsData = [
-  "HTML",
-  "CSS",
   "JavaScript",
   "TypeScript",
   "React.js",
   "Next.js",
   "React Native",
-  "Tailwind CSS",
   "Node.js",
+  "Nest.js",
   "Express.js",
+  "HTML",
+  "CSS",
+  "Tailwind CSS",
+  "PostgreSQL",
   "MongoDB",
   "REST APIs",
-  "OpenAI API",
   "Firebase",
   "Supabase",
+  "Architectural Design",
+  "Server-Side Programming",
   "Git",
-  "SaaS Development",
-  "CRM Systems",
   "AI Integration",
-  "Framer Motion", // Added based on original data, assuming it's still relevant
 ] as const;

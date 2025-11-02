@@ -19,46 +19,34 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I enjoy building fast, user-friendly, and scalable websites, SaaS
-        platforms, and CRM tools. With{" "}
-        <span className="font-medium">2.5 years of experience</span>, I have
-        worked with{" "}
+        I am a{" "}
+        <span className="font-medium">Full-Stack Software Developer</span> from
+        Karachi, Pakistan, specializing in building modern, fast, and
+        user-friendly websites, mobile applications, CRM systems, and SaaS
+        products. I am proficient in both{" "}
+        <span className="font-medium">JavaScript and TypeScript</span>, using my
+        skills to turn complex problems into clean, scalable solutions.
+      </p>
+
+      <p className="mb-3">
+        My main stack includes{" "}
         <span className="font-medium">
-          JavaScript, TypeScript, and the MERN stack
-        </span>{" "}
-        to create both front-end and full-stack applications. I also developed
-        three helpful <span className="font-medium">NPM packages</span> to solve
-        common developer challenges. My focus is on turning complex problems
-        into simple, clean solutions with a great user experience.
+          React, Next.js, Node.js, Nest.js, and React Native
+        </span>
+        , alongside databases like{" "}
+        <span className="font-medium">PostgreSQL and MongoDB</span>. I am
+        passionate about open-source and have built{" "}
+        <span className="font-medium">Log Vwer</span>, a real-time logging tool
+        for Node.js developers. I also contribute as a part-time Back-End
+        Developer and Project Manager at AFA Innovations on a Fitness AI
+        Application, where I oversee backend development and system
+        architecture.
       </p>
 
       <p>
-        My main stack includes{" "}
-        <span className="font-medium">
-          React.js, Next.js, React Native, Node.js, Express.js, and MongoDB
-        </span>
-        . I am also skilled in{" "}
-        <span className="font-medium">TypeScript and Tailwind CSS</span>. I am
-        always learning and currently exploring{" "}
-        <span className="font-medium">AI, ML, and Data Science</span> to build
-        even smarter applications. I regularly share my learnings and insights
-        on{" "}
-        <a
-          className="underline"
-          href="https://www.linkedin.com/in/iamqitmeer/"
-          target="_blank"
-        >
-          LinkedIn
-        </a>{" "}
-        and{" "}
-        <a
-          className="underline"
-          href="https://www.x.com/iamqitmeer/"
-          target="_blank"
-        >
-          X
-        </a>
-        .
+        I am always learning and currently exploring{" "}
+        <span className="font-medium">DevOps, Cloud & Web3</span> to build smarter
+        applications .
       </p>
     </motion.section>
   );

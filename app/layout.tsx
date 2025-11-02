@@ -1,13 +1,17 @@
 import Header from "@/components/header";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google"; // 1. Inter ki jagah Poppins import karein
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 
-const inter = Inter({ subsets: ["latin"] });
+// 2. Poppins font ko zaroori weights ke saath configure karein
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // Aap apni zaroorat ke mutabiq weights chun sakte hain
+});
 
 export const metadata = {
   // Enhanced Title for better search visibility
@@ -23,11 +27,11 @@ export const metadata = {
   openGraph: {
     title: "Qitmeer Raza | Full Stack Developer",
     description: "Full Stack Software Developer with 2.5 years experience, specializing in MERN, Next.js, React Native, and AI integrations. Building fast, scalable, and intelligent web applications.",
-    url: "https://yourportfolio.com", // **IMPORTANT: Replace with your actual portfolio URL**
+    url: "https://iamqitmeer.vercel.app", // **IMPORTANT: Replace with your actual portfolio URL**
     siteName: "Qitmeer Raza's Portfolio",
     images: [
       {
-        url: "https://yourportfolio.com/og-image.jpg", // **IMPORTANT: Create an attractive OG image (e.g., 1200x630px) and replace this URL.**
+        url: "https://iamqitmeer.vercel.app/og-image.jpg", // **IMPORTANT: Create an attractive OG image (e.g., 1200x630px) and replace this URL.**
         width: 1200,
         height: 630,
         alt: "Qitmeer Raza Full Stack Developer Portfolio",
@@ -42,12 +46,12 @@ export const metadata = {
     title: "Qitmeer Raza | Full Stack Developer",
     description: "Full Stack Software Developer with 2.5 years experience, specializing in MERN, Next.js, React Native, and AI integrations. Building fast, scalable, and intelligent web applications.",
     creator: "@yourtwitterhandle", // **IMPORTANT: Replace with your Twitter handle, e.g., @iamqitmeer**
-    images: ["https://yourportfolio.com/twitter-image.jpg"], // **IMPORTANT: Create an attractive Twitter image (e.g., 1200x675px) and replace this URL.**
+    images: ["https://iamqitmeer.vercel.app/twitter-image.jpg"], // **IMPORTANT: Create an attractive Twitter image (e.g., 1200x675px) and replace this URL.**
   },
 
   // Canonical URL (optional but good for preventing duplicate content issues if you have multiple URLs for the same content)
   alternates: {
-    canonical: "https://yourportfolio.com", // **IMPORTANT: Replace with your actual portfolio URL**
+    canonical: "https://iamqitmeer.vercel.app", // **IMPORTANT: Replace with your actual portfolio URL**
   },
 };
 
@@ -59,7 +63,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        // 3. Yahan 'poppins.className' ka istemal karein
+        className={`${poppins.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
         <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
