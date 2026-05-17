@@ -4,29 +4,53 @@
 
 html {
   --line-color: #e5e7eb;
+  --accent-from: #4f46e5;
+  --accent-to: #7c3aed;
 }
 
 html.dark {
   --line-color: rgba(255, 255, 255, 0.2);
+  --accent-from: #818cf8;
+  --accent-to: #a78bfa;
 }
 
 .borderBlack {
-  @apply border border-black/10;
+  @apply border border-black/10 dark:border-white/10;
 }
-/* Default (Light mode) */
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-600 dark:from-indigo-400 dark:via-violet-400 dark:to-indigo-400;
+}
+
+.glass-card {
+  @apply borderBlack rounded-2xl bg-white/70 shadow-lg shadow-indigo-500/[0.04] backdrop-blur-md dark:bg-gray-950/50 dark:shadow-black/20;
+}
+
+.section-glow {
+  @apply relative;
+}
+
+.section-glow::before {
+  content: "";
+  @apply pointer-events-none absolute -inset-x-8 -top-6 h-24 rounded-full opacity-40 blur-3xl;
+  background: linear-gradient(
+    90deg,
+    rgba(79, 70, 229, 0.15),
+    rgba(124, 58, 237, 0.12),
+    rgba(79, 70, 229, 0.15)
+  );
+}
+
 ::selection {
-    background: #111;
+  background: #4f46e5;
   color: white;
 }
 
-/* Dark mode (when html has class "dark") */
 html.dark ::selection {
-  background: white;
-  color: #111;
-
+  background: #a5b4fc;
+  color: #111827;
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -37,11 +61,10 @@ html.dark ::selection {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(180deg, #6366f1, #8b5cf6);
   border-radius: 9999px;
 }
 
-/* Dark mode scrollbar */
 html.dark ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(180deg, #818cf8, #a78bfa);
 }

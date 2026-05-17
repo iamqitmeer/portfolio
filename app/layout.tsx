@@ -14,44 +14,40 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  // Enhanced Title for better search visibility
-  title: "Qitmeer Raza | Full Stack Developer | MERN, Next.js, React Native, AI",
-  
-  // More descriptive and keyword-rich description
-  description: "Qitmeer Raza is a Full Stack Software Developer with 2.5 years of experience, specializing in MERN stack, Next.js, and React Native. Expert in building scalable websites, SaaS platforms, CRM tools, and integrating AI for smarter applications. Explore my portfolio for projects in personalization, sales research, and health tech.",
-  
-  // Optional: Keywords for additional context (less critical for Google, but good for completeness)
-  keywords: "Qitmeer Raza, Full Stack Developer, MERN stack, Next.js, React Native, Node.js, MongoDB, Express.js, React.js, TypeScript, Tailwind CSS, AI Integration, SaaS, CRM, Software Developer Portfolio, Web Development, JavaScript, Frontend, Backend",
+  title:
+    "Muhammad Qitmeer | Software Engineer | TypeScript, MERN, Next.js, AI",
+  description:
+    "Muhammad Qitmeer is a Software Engineer from Karachi, Pakistan — AngleBracket.io & Zynix Solutions. Full stack developer building web apps, mobile apps, CRM, and SaaS with TypeScript, Python, MERN, Next.js, Nest.js, React Native, PostgreSQL, Supabase, and AI.",
+  keywords:
+    "Muhammad Qitmeer, Qitmeer Raza, Software Engineer, Full Stack Developer, AngleBracket, Zynix Solutions, MERN, Next.js, Nest.js, React Native, TypeScript, Python, PostgreSQL, Supabase, AI, Machine Learning, SaaS, CRM, Karachi Pakistan",
 
-  // Open Graph (OG) tags for social media sharing
   openGraph: {
-    title: "Qitmeer Raza | Full Stack Developer",
-    description: "Full Stack Software Developer with 2.5 years experience, specializing in MERN, Next.js, React Native, and AI integrations. Building fast, scalable, and intelligent web applications.",
-    url: "https://iamqitmeer.vercel.app", // **IMPORTANT: Replace with your actual portfolio URL**
-    siteName: "Qitmeer Raza's Portfolio",
+    title: "Muhammad Qitmeer | Software Engineer",
+    description:
+      "Software Engineer at AngleBracket.io. TypeScript, MERN, Next.js, Nest.js, React Native, PostgreSQL, Supabase, and AI — building fast, scalable web and mobile products.",
+    url: "https://iamqitmeer.vercel.app",
+    siteName: "Muhammad Qitmeer Portfolio",
     images: [
       {
-        url: "https://iamqitmeer.vercel.app/og-image.jpg", // **IMPORTANT: Create an attractive OG image (e.g., 1200x630px) and replace this URL.**
+        url: "https://iamqitmeer.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Qitmeer Raza Full Stack Developer Portfolio",
+        alt: "Muhammad Qitmeer Software Engineer Portfolio",
       },
     ],
     locale: "en_US",
   },
 
-  // Twitter Card tags for Twitter sharing
   twitter: {
     card: "summary_large_image",
-    title: "Qitmeer Raza | Full Stack Developer",
-    description: "Full Stack Software Developer with 2.5 years experience, specializing in MERN, Next.js, React Native, and AI integrations. Building fast, scalable, and intelligent web applications.",
-    creator: "@yourtwitterhandle", // **IMPORTANT: Replace with your Twitter handle, e.g., @iamqitmeer**
-    images: ["https://iamqitmeer.vercel.app/twitter-image.jpg"], // **IMPORTANT: Create an attractive Twitter image (e.g., 1200x675px) and replace this URL.**
+    title: "Muhammad Qitmeer | Software Engineer",
+    description:
+      "Software Engineer building web apps, SaaS, CRM, and AI products with TypeScript, MERN, Next.js, and React Native.",
+    images: ["https://iamqitmeer.vercel.app/twitter-image.jpg"],
   },
 
-  // Canonical URL (optional but good for preventing duplicate content issues if you have multiple URLs for the same content)
   alternates: {
-    canonical: "https://iamqitmeer.vercel.app", // **IMPORTANT: Replace with your actual portfolio URL**
+    canonical: "https://iamqitmeer.vercel.app",
   },
 };
 

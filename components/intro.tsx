@@ -63,9 +63,11 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Qitmeer.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">2+ years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>.
+        <span className="font-bold">software engineer</span> from Karachi,
+        Pakistan — building{" "}
+        <span className="italic">web apps, mobile apps, CRM systems, and SaaS</span>{" "}
+        with TypeScript, MERN, Next.js, Nest.js, React Native, PostgreSQL, and
+        AI.
       </motion.h1>
 
       <motion.div
@@ -99,7 +101,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="http://linkedin.com/in/iamqitmeer"
+          href="https://www.linkedin.com/in/iamqitmeer"
           target="_blank"
         >
           <BsLinkedin />

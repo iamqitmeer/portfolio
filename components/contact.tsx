@@ -32,11 +32,53 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
+        Korangi Industrial Area, Karachi, Pakistan
+      </p>
+      <p className="text-gray-700 mt-2 dark:text-white/80">
+        Email:{" "}
         <a className="underline" href="mailto:iamqitmeeer@gmail.com">
           iamqitmeeer@gmail.com
-        </a>{" "}
-        or through this form.
+        </a>
+        {" · "}
+        <a
+          className="underline"
+          href="https://wa.me/923198249517"
+          target="_blank"
+          rel="noreferrer"
+        >
+          WhatsApp +92 319 8249517
+        </a>
+      </p>
+      <p className="text-gray-700 mt-2 dark:text-white/80">
+        <a
+          className="underline"
+          href="https://www.linkedin.com/in/iamqitmeer"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+        {" · "}
+        <a
+          className="underline"
+          href="https://github.com/iamqitmeer"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+        {" · "}
+        <a
+          className="underline"
+          href="https://iamqitmeer.vercel.app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          iamqitmeer.vercel.app
+        </a>
+      </p>
+      <p className="text-gray-600 mt-4 text-sm dark:text-white/60">
+        Or send a message through this form.
       </p>
 
       <form
