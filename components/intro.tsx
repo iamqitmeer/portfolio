@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVdFy3LC7955nPH0tnxeHjQrgK6a4WLdVMxg&s"
+              src="https://media.licdn.com/dms/image/v2/D4D03AQF0fPCs4HWJBw/profile-displayphoto-crop_800_800/B4DZ2IHVQ5KsAM-/0/1776105119653?e=1780531200&v=beta&t=BJXHkZX8rFUTkzs3pItqSfr0srLe0NWK6t40rAj0t0g"
               alt="Qitmeer portrait"
               width="192"
               height="192"
