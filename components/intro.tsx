@@ -31,8 +31,8 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://media.licdn.com/dms/image/v2/D4D03AQF0fPCs4HWJBw/profile-displayphoto-crop_800_800/B4DZ2IHVQ5KsAM-/0/1776105119653?e=1780531200&v=beta&t=BJXHkZX8rFUTkzs3pItqSfr0srLe0NWK6t40rAj0t0g"
-              alt="Qitmeer portrait"
+              src="/qitmeer.jpg"
+              alt="Muhammad Qitmeer portrait"
               width="192"
               height="192"
               quality="95"
