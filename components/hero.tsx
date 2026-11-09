@@ -9,6 +9,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { milestones, profile } from "@/lib/data";
 import Orbit from "./orbit";
 import Age from "./age";
+import { Magnetic } from "./fx";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -55,7 +56,7 @@ export default function Hero() {
             scrollTrigger: {
               trigger: root.current,
               start: "top top",
-              end: "45% top",
+              end: "+=320",
               scrub: 0.6,
             },
           })
@@ -115,9 +116,11 @@ export default function Hero() {
         </p>
 
         <div className="hero-fade mt-9 flex flex-wrap items-center gap-3">
-          <a href={`mailto:${profile.email}`} className="btn-primary">
-            Email me
-          </a>
+          <Magnetic>
+            <a href={`mailto:${profile.email}`} className="btn-primary">
+              Email me
+            </a>
+          </Magnetic>
           <a href={profile.resume} download className="btn-ghost">
             Download résumé
           </a>

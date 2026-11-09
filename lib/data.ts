@@ -221,16 +221,26 @@ export const sideProject = {
 };
 
 export type Role = { title: string; dates: string; text?: string };
-export type Company = { company: string; place: string; roles: Role[] };
+export type Kind = "teaching" | "internship" | "engineering" | "founding";
+export type Company = { company: string; kind: Kind; place: string; roles: Role[] };
+
+export const kindMeta: Record<Kind, { label: string }> = {
+  teaching: { label: "Teaching" },
+  internship: { label: "Internship" },
+  engineering: { label: "Engineering" },
+  founding: { label: "Founding & product" },
+};
 
 export const experienceData: Company[] = [
   {
     company: "Hearlist",
+    kind: "engineering",
     place: "Remote",
     roles: [{ title: "Engineering", dates: "Aug 2026 – Present" }],
   },
   {
     company: "AngleBrackets.io",
+    kind: "engineering",
     place: "Karachi",
     roles: [
       {
@@ -247,11 +257,13 @@ export const experienceData: Company[] = [
   },
   {
     company: "Rembly",
+    kind: "founding",
     place: "Remote",
     roles: [{ title: "Product", dates: "Jun 2026 – Present" }],
   },
   {
     company: "prAIsm",
+    kind: "engineering",
     place: "Remote",
     roles: [
       { title: "Software Engineer", dates: "Feb 2026 – Apr 2026" },
@@ -264,6 +276,7 @@ export const experienceData: Company[] = [
   },
   {
     company: "Zynix Solutions",
+    kind: "founding",
     place: "Karachi",
     roles: [
       {
@@ -275,6 +288,7 @@ export const experienceData: Company[] = [
   },
   {
     company: "Appollon Digitals",
+    kind: "engineering",
     place: "Karachi",
     roles: [
       {
@@ -286,6 +300,7 @@ export const experienceData: Company[] = [
   },
   {
     company: "Zenth Solutions",
+    kind: "engineering",
     place: "Karachi",
     roles: [
       {
@@ -297,6 +312,7 @@ export const experienceData: Company[] = [
   },
   {
     company: "POX Solutions",
+    kind: "internship",
     place: "Karachi",
     roles: [
       {
@@ -308,6 +324,7 @@ export const experienceData: Company[] = [
   },
   {
     company: "Dawat-e-Islami",
+    kind: "internship",
     place: "Karachi",
     roles: [
       {
@@ -319,6 +336,7 @@ export const experienceData: Company[] = [
   },
   {
     company: "SIMSAT Computer Academy",
+    kind: "teaching",
     place: "Karachi",
     roles: [
       {

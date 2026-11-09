@@ -3,8 +3,7 @@ import PageHero from "@/components/page-hero";
 import JourneyTrack from "@/components/journey-track";
 import Manifesto from "@/components/manifesto";
 import Contact from "@/components/contact";
-import Age from "@/components/age";
-import { chapters, profile } from "@/lib/data";
+import YearTicker from "@/components/year-ticker";
 
 export const metadata = {
   title: "Journey of Qitmeer Raza",
@@ -13,32 +12,13 @@ export const metadata = {
 };
 
 export default function JourneyPage() {
-  const facts: [React.ReactNode, string][] = [
-    [String(profile.buildingSince), "First freelance work"],
-    [String(chapters.length), "Chapters so far"],
-    [<Age key="age" />, "Years old, from Korangi"],
-    ["Now", "Founder, Augere Labs"],
-  ];
-
   return (
     <main id="main">
       <PageHero
         title="From freelancing in 2020"
         accent="to my own studio."
         lead="Freelance projects, teaching at 13, internships, full-stack roles, a company I co-founded and closed, client-facing engineering and now my own products. Here's how each step led to the next."
-        aside={
-          <dl className="ml-auto grid max-w-[24rem] grid-cols-2 gap-px overflow-hidden rounded-[20px] border border-line bg-line">
-            {facts.map(([v, l]) => (
-              <div key={l} className="bg-ink p-5">
-                <dt className="sr-only">{l}</dt>
-                <dd>
-                  <span className="block font-brand text-[2rem] font-bold leading-none tracking-[-0.04em]">{v}</span>
-                  <span aria-hidden className="mt-2 block text-[0.875rem] text-dim">{l}</span>
-                </dd>
-              </div>
-            ))}
-          </dl>
-        }
+        aside={<YearTicker />}
       />
       <JourneyTrack />
       <Manifesto />

@@ -8,6 +8,7 @@ import { useGSAP } from "@gsap/react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { projectsData, sideProject } from "@/lib/data";
 import SectionHead from "./section-head";
+import { Tilt } from "./fx";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -63,14 +64,13 @@ export default function Work() {
             const flip = i % 2 === 1;
             return (
               <article key={p.title} className="grid items-center gap-10 md:grid-cols-12 md:gap-14">
+                <Tilt max={5} className={`rounded-[20px] md:col-span-7 ${flip ? "md:order-2" : ""}`}>
                 <a
                   href={p.url}
                   target="_blank"
                   rel="noreferrer"
                   aria-label={`Visit ${p.title}`}
-                  className={`case-frame group relative block aspect-[16/10] overflow-hidden rounded-[20px] border border-line bg-raised md:col-span-7 ${
-                    flip ? "md:order-2" : ""
-                  }`}
+                  className="case-frame group relative block aspect-[16/10] overflow-hidden rounded-[20px] border border-line bg-raised"
                 >
                   <Image
                     src={p.image}
@@ -82,6 +82,7 @@ export default function Work() {
                     Case study: {p.title}
                   </span>
                 </a>
+                </Tilt>
 
                 <div className={`md:col-span-5 ${flip ? "md:order-1" : ""}`}>
                   <p className="text-[0.9375rem] text-dim">{p.label}</p>

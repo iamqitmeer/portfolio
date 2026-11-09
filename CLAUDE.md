@@ -18,4 +18,6 @@ The site deliberately shares the Augere Labs visual identity. Keep it that way.
   experience Gantt bars + row lines, journey pinned horizontal scroll, footer name reveal + pointer spotlight,
   nav sliding pill + mobile menu sheet.
   Don't add generic fade-up entrances to every section.
+- 3D: `components/hero-scene.tsx` (plain three.js, loaded with next/dynamic, ssr:false). Particles morph cloud -> orbits on the same scroll range (+=320) as the headline fill. Pauses off-screen, static frame for reduced motion.
+- Framer Motion is used only for interaction: `components/fx.tsx` (Magnetic, Tilt, Cursor), experience accordion + tooltip. Scroll-driven motion stays in GSAP.
 - Don't invent metrics or claims; only use facts from the LinkedIn profile in `lib/data.ts`.

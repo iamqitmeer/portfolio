@@ -3,6 +3,7 @@
 import { FiArrowUpRight } from "react-icons/fi";
 import { ventures } from "@/lib/data";
 import SectionHead from "./section-head";
+import { Tilt } from "./fx";
 
 /** Cards track the pointer so a soft light follows it (see .glow in globals.css). */
 function track(e: React.PointerEvent<HTMLElement>) {
@@ -26,6 +27,7 @@ export default function Now() {
             const Tag = v.href ? "a" : "div";
             return (
               <li key={v.name} className={i === 0 ? "md:col-span-3" : ""}>
+                <Tilt max={4} className="h-full rounded-[20px]">
                 <Tag
                   {...(v.href ? { href: v.href, target: "_blank", rel: "noreferrer" } : {})}
                   onPointerMove={track}
@@ -62,6 +64,7 @@ export default function Now() {
                     <p className="mt-4 max-w-[40ch] leading-[1.6] text-dim">{v.text}</p>
                   </div>
                 </Tag>
+                </Tilt>
               </li>
             );
           })}

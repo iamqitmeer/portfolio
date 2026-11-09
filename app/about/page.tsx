@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import PageHero from "@/components/page-hero";
@@ -8,7 +7,8 @@ import Marquee from "@/components/marquee";
 import Contact from "@/components/contact";
 import SectionHead from "@/components/section-head";
 import NameStory from "@/components/name-story";
-import Age from "@/components/age";
+import Portrait from "@/components/about/portrait";
+import AboutBento from "@/components/about/bento";
 import { aboutIntro, builtKinds, profile, ventures } from "@/lib/data";
 
 export const metadata = {
@@ -24,55 +24,10 @@ export default function AboutPage() {
         title="Product thinking and"
         accent="technical execution."
         lead="I enjoy working on problems that need both. I like understanding why something needs to be built just as much as figuring out how to build it."
-        aside={
-          <figure className="panel relative ml-auto max-w-[24rem] overflow-hidden p-2">
-            <Image
-              src="/qitmeer.jpg"
-              alt="Portrait of Qitmeer Raza"
-              width={400}
-              height={400}
-              priority
-              className="aspect-square w-full rounded-[14px] object-cover"
-            />
-            <figcaption className="flex items-center justify-between px-3 pb-2 pt-4 text-[0.875rem]">
-              <span className="font-semibold">{profile.name}</span>
-              <span className="flex items-center gap-2 text-dim">
-                <span className="h-1.5 w-1.5 rounded-full bg-signal" />
-                Korangi, Karachi
-              </span>
-            </figcaption>
-          </figure>
-        }
+        aside={<Portrait />}
       />
 
-      {/* Quick facts */}
-      <section aria-label="Quick facts" className="border-t border-line">
-        <dl className="mx-auto grid max-w-[80rem] grid-cols-2 md:grid-cols-4">
-          {(
-            [
-              ["Born", "19 October 2008", profile.born.place],
-              ["Age", <Age key="age" />, "Years old"],
-              ["Roots", "Gujarati", "Family from Godhra, Gujarat, India"],
-              ["Building since", String(profile.buildingSince), "Started with freelancing"],
-            ] as [string, React.ReactNode, string][]
-          ).map(([label, value, note], i) => (
-            <div
-              key={label}
-              className={`px-5 py-8 md:px-10 md:py-10 ${i % 2 === 1 ? "border-l border-line" : ""} ${
-                i > 1 ? "border-t border-line md:border-t-0" : ""
-              } ${i === 2 ? "md:border-l" : ""}`}
-            >
-              <dt className="font-mono text-[0.75rem] text-faint">{label}</dt>
-              <dd className="mt-3">
-                <span className="block font-brand text-[clamp(1.6rem,2.6vw,2.2rem)] font-bold leading-none tracking-[-0.03em]">
-                  {value}
-                </span>
-                <span className="mt-2 block text-[0.9375rem] text-dim">{note}</span>
-              </dd>
-            </div>
-          ))}
-        </dl>
-      </section>
+      <AboutBento />
 
       {/* Story */}
       <section aria-label="About me" className="border-t border-line">

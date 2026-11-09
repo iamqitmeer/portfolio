@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { navLinks, profile } from "@/lib/data";
+import { Magnetic } from "./fx";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -134,9 +135,11 @@ export default function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a href="#contact" className="btn-primary hidden h-11 px-5 sm:inline-flex">
-            Let&apos;s talk
-          </a>
+          <span className="hidden sm:inline-flex"><Magnetic strength={0.25}>
+            <a href="#contact" className="btn-primary h-11 px-5">
+              Let&apos;s talk
+            </a>
+          </Magnetic></span>
           <button
             type="button"
             onClick={() => setOpen((o) => !o)}
