@@ -110,8 +110,8 @@ export default function Hero() {
 
         <p className="hero-fade mt-8 max-w-[34rem] text-[1.1875rem] leading-[1.6] text-dim">
           I&apos;m {profile.name}, <Age />, a software engineer and founder from Korangi, Karachi. I founded
-          Augere Labs, I&apos;m building Rembly and Hearlist, and I work as a Forward
-          Deployed Engineer at AngleBrackets.
+          Augere Labs, I&apos;m building Rembly and Hearlist, and I&apos;m a Lead at
+          AngleBrackets, across engineering and performance marketing.
         </p>
 
         <div className="hero-fade mt-9 flex flex-wrap items-center gap-3">

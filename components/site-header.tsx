@@ -38,6 +38,7 @@ export default function SiteHeader() {
 
       if (pathname === "/about") setActive("About");
       else if (pathname === "/journey") setActive("Journey");
+      else if (pathname === "/marketing") setActive("Marketing");
       else {
         // On home, the active link is whichever section spans the viewport middle
         const sections = [

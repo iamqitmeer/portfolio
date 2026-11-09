@@ -4,6 +4,7 @@ import Now from "@/components/now";
 import Work from "@/components/work";
 import Practice from "@/components/practice";
 import Marquee from "@/components/marquee";
+import MarketingTeaser from "@/components/marketing-teaser";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Now />
       <Work />
       <Practice />
+      <MarketingTeaser />
       <Marquee />
       <Experience />
       <Contact />

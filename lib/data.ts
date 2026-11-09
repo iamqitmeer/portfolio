@@ -63,6 +63,7 @@ export const navLinks = [
   { label: "Experience", href: "/#experience" },
   { label: "About", href: "/about" },
   { label: "Journey", href: "/journey" },
+  { label: "Marketing", href: "/marketing" },
 ] as const;
 
 export type Venture = {
@@ -98,10 +99,10 @@ export const ventures: Venture[] = [
   },
   {
     name: "AngleBrackets",
-    role: "Forward Deployed Engineer",
+    role: "Lead",
     since: "Jul 2026",
-    short: "Between clients and engineering",
-    text: "I lead client calls, shape technical solutions, keep projects moving and support performance marketing: Google Ads, conversion tracking and campaign optimisation.",
+    short: "Leading client work across engineering and growth",
+    text: "I lead at AngleBrackets: running client calls, shaping technical solutions, keeping projects moving, and managing paid acquisition across Google, Meta and LinkedIn Ads.",
   },
 ];
 
@@ -111,7 +112,7 @@ export const milestones = [
   { year: "2022", title: "Teaching at 13", note: "SIMSAT Computer Academy" },
   { year: "2023", title: "First team", note: "Frontend at Dawat-e-Islami" },
   { year: "2024", title: "Full stack", note: "MERN and Next.js at Zenth, POX" },
-  { year: "2025", title: "AngleBrackets", note: "AI SaaS and marketing tech" },
+  { year: "2025", title: "AngleBrackets", note: "Now Lead: engineering and growth" },
   { year: "2026", title: "Founder", note: "Augere Labs, Rembly, Hearlist" },
 ] as const;
 
@@ -144,9 +145,9 @@ export const practiceData = [
     items: ["AI integrations", "AI-powered apps", "APIs", "Workflow automation"],
   },
   {
-    area: "Marketing technology",
-    text: "Clean data signals from the product to the ad platforms, so campaigns optimise on real outcomes.",
-    items: ["Google Ads API", "Meta Ads API", "Google Tag Manager", "Server-side tracking"],
+    area: "Performance marketing",
+    text: "Paid acquisition across Google, Meta and LinkedIn Ads, judged on real revenue: campaign strategy, daily optimisation, offline attribution and honest reporting.",
+    items: ["Google Ads", "Meta Ads", "LinkedIn Ads", "Conversions API", "Offline conversions", "Google Tag Manager", "GA4"],
   },
 ] as const;
 
@@ -233,9 +234,9 @@ export const experienceData: Company[] = [
     place: "Karachi",
     roles: [
       {
-        title: "Forward Deployed Engineer",
+        title: "Lead, Forward Deployed Engineering",
         dates: "Jul 2026 – Present",
-        text: "Lead client calls, define solutions with the development team and connect the technical and business sides, while supporting Google Ads, conversion tracking and campaign optimisation.",
+        text: "Lead client calls, define solutions with the development team and connect the technical and business sides. Manage paid acquisition for a portfolio of clients across legal, fintech, B2B SaaS, events and healthcare.",
       },
       {
         title: "Software Engineer",
@@ -334,7 +335,7 @@ export const experienceData: Company[] = [
 export const aboutIntro = [
   "I'm a software engineer and founder who enjoys taking products from an early idea to something people can actually use.",
   "I founded Augere Labs, where I work with founders to plan, design and build software products. My work covers everything from understanding the problem and making product decisions to choosing the right technology, writing code and getting products ready for launch.",
-  "Alongside Augere Labs, I'm building Rembly, a personal AI memory product, and working on Hearlist. I also work as a Forward Deployed Engineer at AngleBrackets, where I sit between clients, business needs and engineering.",
+  "Alongside Augere Labs, I'm building Rembly, a personal AI memory product, and working on Hearlist. I'm also a Lead at AngleBrackets, where I sit between clients, business needs and engineering, and manage paid acquisition for our clients.",
 ];
 
 export const dayToDay = [
@@ -363,6 +364,7 @@ export const builtKinds = [
   "Mobile apps",
   "Business automation",
   "Marketing technology",
+  "Paid acquisition",
 ] as const;
 
 /* ---------- Journey page ---------- */
@@ -446,7 +448,7 @@ export const chapters: Chapter[] = [
     place: "AngleBrackets",
     title: "Between clients and engineering",
     story:
-      "I joined as a software engineer rebuilding the foundation of an AI SaaS platform and wiring marketing data with Google Tag Manager, Google Ads API and Meta Ads API. Since July 2026 I've been a Forward Deployed Engineer: leading client calls, shaping solutions and keeping projects moving.",
+      "I joined as a software engineer rebuilding the foundation of an AI SaaS platform and wiring marketing data with Google Tag Manager, Google Ads API and Meta Ads API. Since July 2026 I've been a Lead: running client calls, shaping solutions, keeping projects moving and managing paid acquisition across Google, Meta and LinkedIn Ads.",
     tags: ["AI SaaS", "Ad tech", "Client leadership"],
     current: true,
   },
