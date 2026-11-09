@@ -8,6 +8,8 @@ import { chapters } from "@/lib/data";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
+const chapterWords: Record<number, string> = { 7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten", 11: "Eleven", 12: "Twelve" };
+
 export default function JourneyTrack() {
   const root = useRef<HTMLElement>(null);
   const track = useRef<HTMLOListElement>(null);
@@ -96,7 +98,7 @@ export default function JourneyTrack() {
       <div className="journey-pin relative flex flex-col justify-center overflow-hidden md:h-screen">
         <div className="mx-auto w-full max-w-[80rem] px-5 pt-20 md:px-10 md:pt-24">
           <div className="flex items-end justify-between gap-6">
-            <h2 className="h-section">Eight chapters</h2>
+            <h2 className="h-section">{chapterWords[chapters.length] ?? chapters.length} chapters</h2>
             <p className="hidden font-mono text-[0.8125rem] text-faint md:block">scroll to move through time</p>
           </div>
         </div>
@@ -149,7 +151,7 @@ export default function JourneyTrack() {
             <div className="journey-progress absolute inset-0 origin-left bg-gradient-to-r from-lilac-deep via-lilac to-signal" />
           </div>
           <div className="mt-3 flex justify-between font-mono text-[0.75rem] text-faint">
-            <span>2023, first component</span>
+            <span>2020, freelancing</span>
             <span className="text-signal">Now, building my own</span>
           </div>
         </div>

@@ -8,6 +8,7 @@ import { useGSAP } from "@gsap/react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { milestones, profile } from "@/lib/data";
 import Orbit from "./orbit";
+import Age from "./age";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -108,7 +109,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero-fade mt-8 max-w-[34rem] text-[1.1875rem] leading-[1.6] text-dim">
-          I&apos;m {profile.name}, a software engineer and founder in Karachi. I founded
+          I&apos;m {profile.name}, <Age />, a software engineer and founder from Korangi, Karachi. I founded
           Augere Labs, I&apos;m building Rembly and Hearlist, and I work as a Forward
           Deployed Engineer at AngleBrackets.
         </p>
@@ -142,7 +143,7 @@ export default function Hero() {
         </div>
 
         {/* Career rail */}
-        <ol className="relative mt-20 grid grid-cols-2 gap-y-10 pb-16 sm:grid-cols-3 md:mt-24 md:grid-cols-5 md:pb-24">
+        <ol className="relative mt-20 grid grid-cols-2 gap-y-10 pb-16 sm:grid-cols-3 md:mt-24 md:grid-cols-6 md:pb-24">
           <span aria-hidden className="absolute left-2 right-0 top-[7px] hidden h-px bg-paper/15 md:block" />
           <span aria-hidden className="rail-fill absolute left-2 right-0 top-[7px] hidden h-px origin-left bg-gradient-to-r from-lilac-deep via-lilac to-signal md:block" />
           {milestones.map((m, i) => {

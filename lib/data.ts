@@ -11,7 +11,52 @@ export const profile = {
   augere: "https://augerelabs.com",
   resume: "/QitmeerRaza_FullStack_MERN_ReactNative.pdf",
   location: "Karachi, Pakistan",
+  /** 19 October 2008, Korangi, Karachi. Month is 0-based for Date. */
+  born: { year: 2008, month: 9, day: 19, place: "Korangi, Karachi, Pakistan" },
+  roots: "Gujarati, with family roots in Godhra, Gujarat, India",
+  buildingSince: 2020,
 };
+
+/** Age in whole years, computed from the birth date. */
+export function ageOn(date: Date): number {
+  const { year, month, day } = profile.born;
+  let age = date.getFullYear() - year;
+  if (date.getMonth() < month || (date.getMonth() === month && date.getDate() < day)) age--;
+  return age;
+}
+
+/* ---------- The name ---------- */
+
+export const nameStory = {
+  arabic: "قطمير",
+  givenBy: "Maulana Muhammad Ilyas Attar Qadri",
+  givenByRole: "founder of Dawat-e-Islami",
+  paragraphs: [
+    "My name was given to me by Maulana Muhammad Ilyas Attar Qadri, the founder of Dawat-e-Islami. Years later, Dawat-e-Islami is also where I did my first internship as a developer.",
+    "Qitmeer comes from the Arabic qitmir. In Islamic tradition it is the name of the dog that stayed with the Companions of the Cave, keeping watch at the entrance while they slept: a story of loyalty, told in Surah Al-Kahf.",
+    "The word itself appears in the Quran in Surah Fatir, where qitmir means the thin skin around a date seed, the smallest and lightest of things.",
+  ],
+  // Excerpts of the two verses; translation: Sahih International.
+  references: [
+    {
+      label: "Surah Al-Kahf",
+      ref: "18:18",
+      arabic: "وَكَلْبُهُم بَاسِطٌ ذِرَاعَيْهِ بِالْوَصِيدِ",
+      highlight: "",
+      translation: "…and their dog stretched his forelegs at the entrance.",
+      note: "The companion who kept watch at the cave",
+    },
+    {
+      label: "Surah Fatir",
+      ref: "35:13",
+      arabic: "وَالَّذِينَ تَدْعُونَ مِن دُونِهِ مَا يَمْلِكُونَ مِن قِطْمِيرٍ",
+      highlight: "قِطْمِيرٍ",
+      translation:
+        "…and those whom you invoke other than Him do not possess even the membrane of a date seed.",
+      note: "Qitmir: the thin skin of a date seed",
+    },
+  ],
+} as const;
 
 export const navLinks = [
   { label: "Work", href: "/#work" },
@@ -62,15 +107,16 @@ export const ventures: Venture[] = [
 
 /** Career rail under the hero. */
 export const milestones = [
-  { year: "2023", title: "First production code", note: "Frontend at Dawat-e-Islami" },
+  { year: "2020", title: "Freelancing", note: "Where it all started" },
+  { year: "2022", title: "Teaching at 13", note: "SIMSAT Computer Academy" },
+  { year: "2023", title: "First team", note: "Frontend at Dawat-e-Islami" },
   { year: "2024", title: "Full stack", note: "MERN and Next.js at Zenth, POX" },
-  { year: "2025", title: "Backend and product", note: "System design at prAIsm" },
   { year: "2025", title: "AngleBrackets", note: "AI SaaS and marketing tech" },
   { year: "2026", title: "Founder", note: "Augere Labs, Rembly, Hearlist" },
 ] as const;
 
 export const stats = [
-  { value: 2023, label: "Writing production code since" },
+  { value: 2020, label: "Building software since" },
   { value: 7, label: "Teams I've shipped with" },
   { value: 3, label: "Products I'm building now" },
   { value: 5, label: "Disciplines, product to ad tech" },
@@ -270,6 +316,17 @@ export const experienceData: Company[] = [
       },
     ],
   },
+  {
+    company: "SIMSAT Computer Academy",
+    place: "Karachi",
+    roles: [
+      {
+        title: "Teacher",
+        dates: "Feb 2022 – Mar 2023",
+        text: "Taught students at a local computer and technical institute for over a year, starting at 13.",
+      },
+    ],
+  },
 ];
 
 /* ---------- About page ---------- */
@@ -320,6 +377,22 @@ export type Chapter = {
 };
 
 export const chapters: Chapter[] = [
+  {
+    period: "2020",
+    place: "Freelancing",
+    title: "Where it started",
+    story:
+      "My journey began with freelancing in 2020. Working on projects for real people, on my own, long before I had a job title, is how I first learned to build things that someone actually uses.",
+    tags: ["Freelance", "Web", "First projects"],
+  },
+  {
+    period: "2022 – 2023",
+    place: "SIMSAT Computer Academy",
+    title: "Teaching at 13",
+    story:
+      "From February 2022 to March 2023 I worked as a teacher at SIMSAT Computer Academy, a local computer and technical institute in Karachi. I was 13 when I started, and taught there for more than a year.",
+    tags: ["Teaching", "Computers", "Achievement"],
+  },
   {
     period: "2023",
     place: "Dawat-e-Islami",

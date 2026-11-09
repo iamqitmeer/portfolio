@@ -11,7 +11,7 @@ import SectionHead from "./section-head";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-const FIRST_YEAR = 2023;
+
 
 export default function Experience() {
   const root = useRef<HTMLElement>(null);
@@ -26,9 +26,10 @@ export default function Experience() {
       const e = Math.max(...spans.map((x) => x[1]));
       return { ...c, s, e, live: c.roles.some((r) => /present/i.test(r.dates)) };
     });
-    const start = FIRST_YEAR * 12;
+    const firstYear = Math.floor(Math.min(...rows.map((r) => r.s)) / 12);
+    const start = firstYear * 12;
     const end = (today.getFullYear() + 1) * 12; // through the end of this year
-    const years = Array.from({ length: today.getFullYear() - FIRST_YEAR + 1 }, (_, i) => FIRST_YEAR + i);
+    const years = Array.from({ length: today.getFullYear() - firstYear + 1 }, (_, i) => firstYear + i);
     return { rows, start, end, now: nowIdx, years };
   }, []);
 
@@ -67,7 +68,7 @@ export default function Experience() {
           title="Where I've worked"
           aside={
             <>
-              Since 2023, often more than one thing at once. The full story is on the{" "}
+              Teaching since 2022, building with teams since 2023, often more than one thing at once. The full story is on the{" "}
               <Link href="/journey" className="text-paper underline decoration-lilac/50 underline-offset-4 hover:decoration-lilac">
                 journey page
               </Link>
